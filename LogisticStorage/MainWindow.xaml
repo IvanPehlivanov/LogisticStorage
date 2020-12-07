@@ -1,0 +1,39 @@
+﻿<Window x:Class="LogisticStorage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogisticStorage"
+        mc:Ignorable="d"
+      Title="LogisticStorage" Height="900" Width="600"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button Background="ForestGreen" Content="Einlagern" Name="btnEinlagern" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Click="btnEinlagern_Click"/>
+            <Button Background="Orange" Content="Status Plätze" Name="btnStatusPlätze" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Click="btnStatusPlätze_Click"/>
+            <local:Einlagern Visibility="Collapsed" x:Name="Einlagern"  Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="6"/>
+            <local:Status_Plätze Visibility="Collapsed" x:Name ="StatusPlätze" Grid.Row="1" Grid.RowSpan="3"  Grid.ColumnSpan="6"/>
+        </Grid>
+    </DockPanel>
+</Window>

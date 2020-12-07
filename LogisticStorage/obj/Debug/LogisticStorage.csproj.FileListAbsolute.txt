@@ -1,0 +1,56 @@
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csprojAssemblyReference.cache
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Einlagern.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\MainWindow.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\App.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage_MarkupCompile.cache
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage_MarkupCompile.lref
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Aussen Lager.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Einlagern nach freie Wahl.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Löschen.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Reservieren.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Status Plätze.g.cs
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.exe.config
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.exe
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.pdb
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Einlagern.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\MainWindow.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Aussen Lager.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Einlagern nach freie Wahl.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Löschen.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Reservieren.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\Status Plätze.baml
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.g.resources
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.Properties.Resources.resources
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csproj.GenerateResource.cache
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csproj.CoreCompileInputs.cache
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.exe
+C:\Users\rosar\source\repos\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.pdb
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.exe.config
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.exe
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\bin\Debug\LogisticStorage.pdb
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csprojAssemblyReference.cache
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Aussen Lager.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Einlagern nach freie Wahl.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Einlagern.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Löschen.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\MainWindow.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Reservieren.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Status Plätze.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\App.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage_MarkupCompile.cache
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage_MarkupCompile.lref
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Aussen Lager.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Einlagern nach freie Wahl.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Einlagern.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Löschen.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\MainWindow.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Reservieren.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\Status Plätze.baml
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.g.resources
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.Properties.Resources.resources
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csproj.GenerateResource.cache
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.csproj.CoreCompileInputs.cache
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.exe
+C:\Users\rosar\OneDrive\Desktop\MyPortfolio\LogisticStorage\LogisticStorage\obj\Debug\LogisticStorage.pdb

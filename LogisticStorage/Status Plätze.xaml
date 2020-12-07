@@ -1,0 +1,92 @@
+﻿<UserControl x:Class="LogisticStorage.Status_Plätze"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LogisticStorage"
+             mc:Ignorable="d" 
+         d:DesignHeight="800" d:DesignWidth="500" Background="Lavender">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="LightGray"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"></Setter>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="VerticalScrollBarVisibility" Value="Visible"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column ="1" Grid.ColumnSpan="5"  Background="Orange" Content="Status Plätze" FontSize="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Grid.Column="1" Grid.ColumnSpan="2"  Grid.Row="2" Background="ForestGreen" Content="Frei" FontSize="20" HorizontalContentAlignment="Center" />
+        <DataGrid Name="grdStorage" Grid.Row="3" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Regal" Binding="{Binding Regal}" Width="*"/>
+                <DataGridTextColumn Header="Platz" Binding="{Binding Stellplatz}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Background="Red" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" FontSize="20" Content="Besetzt" HorizontalContentAlignment="Center"/>
+        <DataGrid Grid.Row="3" Grid.RowSpan="4" Grid.Column="4" Grid.ColumnSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Regal" Width="*"/>
+                <DataGridTextColumn Header="Platz" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="7" Background="Gray"/>
+        <Label Background="Gray" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="5" 
+               Content="Suchmaschine" HorizontalContentAlignment="Center"/>
+        <Label Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2"
+               Content="Bitte geben sie Gesuchte information ein:"/>
+        <TextBox Grid.Row="12" Grid.Column="4" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged"/>
+        <DataGrid Name ="dgSearchFunction"  Grid.Row="14" Grid.RowSpan="9" Grid.Column="1" Grid.ColumnSpan="5" SelectionChanged="dgSearchFunction_SelectionChanged" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Position"  Width="*"/>
+                <DataGridTextColumn Header="Auftrag Nr." Binding="{Binding Serien_Nr}" Width="*"/>
+                <DataGridTextColumn Header="L Nr." Binding="{Binding Regal}" Width="*"/>
+                <DataGridTextColumn Header="S Nr." Binding="{Binding Stellplatz}" Width="*"/>
+                <DataGridTextColumn Header="H Nr." Binding="{Binding Tiefe}" Width="*"/>
+                <DataGridTextColumn Header="Regal" Binding="{Binding Breite}" Width="*"/>
+                <DataGridTextColumn Header="Platz" Binding="{Binding Höhe}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

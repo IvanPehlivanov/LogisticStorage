@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="LogisticStorage.Einlagern"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LogisticStorage"
+             mc:Ignorable="d" 
+              d:DesignHeight="800" d:DesignWidth="500" Background="Lavender">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+        <Style TargetType="DataGrid">
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="VerticalScrollBarVisibility" Value="Visible"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="IsEditable" Value="True"/>
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="Width" Value="280"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Label FontSize="25" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5" Background="Green" Content="Einlagern" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center"/>
+        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="Scannieren sie bitte Serien Nr."/>
+        <TextBox x:Name="TxtSerialNo" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2" KeyDown="TxtSerialNo_KeyDown" IsReadOnly="False"/>
+        <Label Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Content="Schachtel"/>
+        <!--<DataGrid x:Name="DataGridSchachtel" Grid.Row="5" Grid.RowSpan="3" Grid.Column="3" Grid.ColumnSpan="3" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="größe"  Header="Größe" Width="*"/>
+                <DataGridTextColumn x:Name="menge"  Header="Menge" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>-->
+        <ListView Grid.Row="5" Grid.RowSpan="3" Grid.ColumnSpan="3" Grid.Column="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Material" Width="70"/>
+                    <GridViewColumn Header="Tiefe" Width="70"/>
+                    <GridViewColumn Header="Breite" Width="70"/>
+                    <GridViewColumn Header="Länge" Width="70"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Background="Gray" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="7"/>
+        <Label Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2" Content="Einlagerung bei Platz"/>
+        <DataGrid  x:Name="DataGridEinlagern" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3" SelectionChanged="DataGridEinlagern_OnSelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Regal" Header="Regal" Width="*"/>
+                <DataGridTextColumn x:Name="Stellplatz" Header="Stellplatz" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Background="Gray" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="7"/>
+        <Label Grid.Row="18" Grid.ColumnSpan="5" Grid.Column="1" Background="Gray" Content="Einlagern nach freie Wahl/Außen Lager/Reservieren/Löschen"
+                   HorizontalContentAlignment="Center"/>
+        <ComboBox ItemsSource="{Binding Operator}" SelectedItem="{Binding SelectedOperator,UpdateSourceTrigger=PropertyChanged}"
+            x:Name="ComboBoxAuswahlProzess" Grid.Row="19" Grid.Column="1" Text="Auswahl Prozessen" SelectionChanged="ComboBox_SelectionChanged">
+        </ComboBox>
+        <local:Einlagern_nach_freie_Wahl x:Name="EinlagernNachFreieWahl" 
+                                         Visibility="{Binding VisibilityEinlagernNachFreieWahl}" 
+                                         Grid.Row="19" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="4"/>
+        <local:Aussen_Lager x:Name="AußenLager"
+                           Visibility="{Binding VisibilityAußenLager}"
+                           Grid.Row="19" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="4"/>
+        <local:Löschen x:Name="Löschen" 
+                       Visibility="{Binding VisibilityLöschen}"
+                       Grid.Row="19" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="4"/>
+        <local:Reservieren x:Name="Reservieren"
+                           Visibility="{Binding VisibilityReservieren}"
+                           Grid.Row="19" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="4"/>
+    </Grid>
+</UserControl>
